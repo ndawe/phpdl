@@ -376,7 +376,7 @@ if(!isset($_GET['display'])) :
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>PHPDL - PHP Directory Lister</title>
+<title><?=$this_folder?></title>
 <style type="text/css">
 body{
     font-family: "Lucida Grande",Calibri,Arial;
