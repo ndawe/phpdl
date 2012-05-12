@@ -461,7 +461,10 @@ table{
     }
     tfoot td.copy{
         text-align: right;
-	white-space: nowrap;
+        white-space: nowrap;
+        font-size: 8pt;
+    }
+    tfoot td.copy a{
         font-size: 8pt;
     }
     tfoot td.cc{
@@ -491,7 +494,7 @@ table{
     <tfoot>
         <tr>
             <td class="total"><? if($folder_list): ?>This folder has <?=count($file_list)?> files totaling <?=$total_size['num']?> <?=$total_size['str']?> in size<? endif; ?></td>
-            <td colspan="<?=isDL('3','2')?>" class="copy"><a target="_blank" href="http://greg-j.com/phpdl/">PHPDL</a><sup>v2</sup> created by <a target="_blank" href="http://greg-j.com">Greg Johnson</a></td>
+            <td colspan="<?=isDL('3','2')?>" class="copy"><a target="_blank" href="http://greg-j.com/phpdl/">PHPDL</a><sup>v2</sup><!-- created by <a target="_blank" href="http://greg-j.com">Greg Johnson</a>--></td>
         </tr>
         <!--<tr>
             <td colspan="<?=isDL('4','3')?>" class="cc"><a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/us/"><img src="http://creativecommons.org/images/public/somerights20.png" alt="CC 3.0" /></a></td>
