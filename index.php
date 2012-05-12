@@ -201,7 +201,7 @@ if ($handle = opendir('.'))
     while (false !== ($file = readdir($handle)))
     {
         // Make sure we don't list this folder, file or their links.
-        if ($file != "." && $file != ".." && $file != $this_script)
+        if ($file != "." && $file != ".." && $file != $this_script && $file != "web.config")
         {
             // Get file info.
             $stat                =    stat($file); // ... slow, but faster than using filemtime() & filesize() instead.
